@@ -2,8 +2,6 @@ package BangunDatardanRuang;
 
 
 public class Busur {
-  double keliling;
-  double luas;
   double busur;
   double phi = 3.14;
   
