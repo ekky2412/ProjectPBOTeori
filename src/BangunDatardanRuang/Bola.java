@@ -2,21 +2,26 @@ package BangunDatardanRuang;
 
 import java.math.*;
 
-public class Bola extends BangunRuang{
-    private double jari2;
-    double phi = 3.14;
+public class Bola extends Lingkaran implements BangunRuang{
     
-    public Bola(float jari2){
-    this.volumeBola();
-    this.jari2 = jari2;
-    }
-   
-    public double getJari2() {
-        return jari2;
+    private double volume,luaspermukaan;
+    
+    public Bola(double jari2){
+       super(jari2);
     }
     
      public void volumeBola (){
-     double hasil  = ((4 * phi * (jari2 * jari2 * jari2))/3);
-     super.setVolume(hasil);
+     double hasil  = ((4 * Math.PI * (super.getJari() * super.getJari() * super.getJari()))/3);
+     this.volume = hasil;
      }
+
+    @Override
+    public double getVolume() {
+        return 0;
+    }
+
+    @Override
+    public double getLuasPermukaan() {
+        return 0;
+    }
 }

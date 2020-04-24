@@ -5,10 +5,8 @@ import java.math.*;
 public class Lingkaran extends BangunDatar{
     private double jari;
     
-    public Lingkaran(float jari) {
+    public Lingkaran(double jari) {
         this.jari = jari;
-        this.kelilingLingkaran();
-        this.luasLingkaran();
     }
 
     public double getJari() {
