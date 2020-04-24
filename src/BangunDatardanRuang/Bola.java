@@ -1,13 +1,12 @@
 package BangunDatardanRuang;
-
 import java.math.*;
 
 public class Bola extends Lingkaran implements BangunRuang{
-    
+
     private double volume,luaspermukaan;
     
-    public Bola(double jari2){
-       super(jari2);
+    public Bola(double jari){
+       super(jari);
     }
     
      public void volumeBola (){
@@ -17,11 +16,13 @@ public class Bola extends Lingkaran implements BangunRuang{
 
     @Override
     public double getVolume() {
-        return 0;
+        VolumeBola = (2 * Luas() * super.getJari()) /3;
+        return VolumeBola;
     }
 
     @Override
     public double getLuasPermukaan() {
-        return 0;
+        LuasPermukaanBola = 2* Luas();
+        return LuasPermukaanBola;
     }
 }
