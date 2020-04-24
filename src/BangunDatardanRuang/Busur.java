@@ -1,12 +1,15 @@
 package BangunDatardanRuang;
 
+import java.math.*;
 
-public class Busur {
-  double busur;
-  double phi = 3.14;
+public class Busur extends Juring{
+
+    public Busur(double jari,double theta) {
+        super(jari,theta);
+    }
   
-   public double busurjuring (double jari_jari, double theta){
-       busur =  theta/360*2*phi* jari_jari;
-       return busur;
+   public void panjangbusur (){
+       double busur =  super.getTheta()/360*2*Math.PI* super.getJari();
+       super.setBusur(busur);
    }
 }
