@@ -2,7 +2,7 @@ package BangunDatardanRuang;
 
 import java.math.*;
 
-public class Lingkaran extends BangunDatar{
+public class Lingkaran{
     private double jari;
     
     public Lingkaran(double jari) {
@@ -13,14 +13,14 @@ public class Lingkaran extends BangunDatar{
         return jari;
     }
     
-    public void luasLingkaran(){
-        double hasil = 2 * Math.PI * Math.pow(jari, 2);
-        super.setLuas(hasil);
+    public double luasLingkaran(){
+        double hasil = Math.PI * jari * jari;
+        return hasil;
     }
     
-    public void kelilingLingkaran(){
+    public double kelilingLingkaran(){
         double hasil = 2 * Math.PI * jari;
-        super.setKeliling(hasil);
+        return hasil;
     }
     
 }
