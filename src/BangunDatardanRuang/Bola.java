@@ -13,7 +13,7 @@ public class Bola extends Lingkaran{
     }
 
     public double getLuasPermukaan() {
-        double LuasPermukaanBola = 2* super.Luas();
+        double LuasPermukaanBola = 4* super.Luas();
         return LuasPermukaanBola;
     }
 }

@@ -11,7 +11,7 @@ public class Juring extends Lingkaran {
         this.theta = theta;
     }
   public double Keliling(){
-      double keliling =(super.getJari() + super.getJari()) + theta/360 * 2 * Math.PI * super.Keliling();
+      double keliling =(super.getJari() + super.getJari()) + theta/360 * super.Keliling();
       return keliling;
   } 
    public double Luas (){

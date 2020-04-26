@@ -11,14 +11,14 @@ public class Tembereng extends Juring {
     
     public double TaliBusur(){
         double rad = Math.toRadians(super.getTheta()/2);
-        double talibusur = super.getJari() * Math.sin(rad);
+        double talibusur = 2*super.getJari() * Math.sin(rad);
         return talibusur;
     }
    
     public double Keliling(){
         // rumus = panjang busur + panjang tali busur
-        double keliling = super.Luas()+TaliBusur();
-        return keliling;
+        double keliling = 2*super.Luas()/super.getJari() + TaliBusur();
+        return TaliBusur();
     }
     
     public double Luas(){
