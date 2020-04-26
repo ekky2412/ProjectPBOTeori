@@ -1,19 +1,21 @@
 package BangunDatardanRuang;
 
 public class Tabung extends Lingkaran{
-    private float tinggi;
+    private double tinggi;
+    
       public Tabung(double jari, double tinggi){
        super(jari);
+       this.tinggi = tinggi;
     }
 
     public double getVolume() {
-        double VolumeTabung = ( super.luasLingkaran()*tinggi);
+        double VolumeTabung = (super.Luas()*tinggi);
         return VolumeTabung;
     }
 
     public double getLuasPermukaan() {
-        double luasSelimut= super.kelilingLingkaran()*tinggi;
-        double LuasPermukaanTabung = 2* super.luasLingkaran() + luasSelimut;
+        double luasSelimut= super.Keliling()*tinggi;
+        double LuasPermukaanTabung = 2* super.Luas() + luasSelimut;
         return LuasPermukaanTabung;
     }
 }

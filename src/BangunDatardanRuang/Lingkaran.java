@@ -13,12 +13,12 @@ public class Lingkaran{
         return jari;
     }
     
-    public double luasLingkaran(){
+    public double Luas(){
         double hasil = Math.PI * jari * jari;
         return hasil;
     }
     
-    public double kelilingLingkaran(){
+    public double Keliling(){
         double hasil = 2 * Math.PI * jari;
         return hasil;
     }

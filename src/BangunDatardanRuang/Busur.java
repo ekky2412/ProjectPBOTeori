@@ -6,6 +6,7 @@ public class Busur extends Juring{
 
     public Busur(double jari,double theta) {
         super(jari,theta);
+        panjangbusur();
     }
   
    public void panjangbusur (){

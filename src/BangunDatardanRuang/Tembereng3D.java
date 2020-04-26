@@ -11,7 +11,7 @@ public class Tembereng3D extends Bola{
 
     @Override
     public double getLuasPermukaan() {
-        double LuasTembereng = 2 * Math.PI * getJari() * tinggi;
+        double LuasTembereng = super.getLuasPermukaan() * tinggi;
         return LuasTembereng;
     }
 

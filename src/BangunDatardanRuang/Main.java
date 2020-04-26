@@ -31,20 +31,40 @@ public class Main {
                                 System.out.print("Masukkan jari-jari : ");
                                 double jari = input.nextDouble();
                                 Lingkaran bLingkaran = new Lingkaran(jari);
-                                System.out.println("Luas Lingkaran adalah " + bLingkaran.luasLingkaran());
-                                System.out.println("Keliling Lingkaran adalah " + bLingkaran.kelilingLingkaran());
+                                System.out.println("Luas Lingkaran adalah " + bLingkaran.Luas());
+                                System.out.println("Keliling Lingkaran adalah " + bLingkaran.Keliling());
                                 break;
                             }
                             case 2: {
                                 System.out.println("== Tembereng Lingkaran ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan Besar Sudut Juring : ");
+                                double sudut = input.nextDouble();
+                                Lingkaran bTembereng = new Tembereng(jari, sudut);
+                                System.out.println("Luas Tembereng Lingkaran adalah " + bTembereng.Luas());
+                                System.out.println("Keliling Tembereng Lingkaran adalah " + bTembereng.Keliling());
                                 break;
                             }
                             case 3: {
                                 System.out.println("== Juring Lingkaran ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan Besar Sudut Juring : ");
+                                double sudut = input.nextDouble();
+                                Lingkaran bJuring = new Juring(jari, sudut);
+                                System.out.println("Luas Juring Lingkaran adalah " + bJuring.Luas());
+                                System.out.println("Keliling Juring Lingkaran adalah " + bJuring.Keliling());
                                 break;
                             }
                             case 4: {
                                 System.out.println("== Busur Lingkaran ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan Besar Sudut Juring : ");
+                                double sudut = input.nextDouble();
+                                Juring bBusur = new Busur(jari, sudut);
+                                System.out.println("Panjang Busur Lingkaran adalah " + bBusur.getBusur());
                                 break;
                             }
                         }
@@ -64,10 +84,22 @@ public class Main {
                         switch (menuruang) {
                             case 1: {
                                 System.out.println("== Bola ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                Bola bBola = new Bola(jari);
+                                System.out.println("Luas Permukaan Bola adalah " + bBola.getLuasPermukaan());
+                                System.out.println("Volume Bola adalah " + bBola.getVolume());
                                 break;
                             }
                             case 2: {
                                 System.out.println("== Tembereng Bola ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan tinggi bola : ");
+                                double tinggi = input.nextDouble();
+                                Bola bBola = new Tembereng3D(jari,tinggi);
+                                System.out.println("Luas Permukaan Tembereng Bola adalah " + bBola.getLuasPermukaan());
+                                System.out.println("Volume Tembereng Bola adalah " + bBola.getVolume());
                                 break;
                             }
                             case 3: {
@@ -76,10 +108,24 @@ public class Main {
                             }
                             case 4: {
                                 System.out.println("== Tabung ==");
+                                System.out.print("Masukkan jari-jari alas : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan tinggi tabung : ");
+                                double tinggi = input.nextDouble();
+                                Tabung bTabung = new Tabung(jari,tinggi);
+                                System.out.println("Luas Permukaan Tabung adalah " + bTabung.getLuasPermukaan());
+                                System.out.println("Volume Tabung adalah " + bTabung.getVolume());
                                 break;
                             }
                             case 5: {
                                 System.out.println("== Kerucut ==");
+                                System.out.print("Masukkan jari-jari : ");
+                                double jari = input.nextDouble();
+                                System.out.print("Masukkan tinggi kerucut : ");
+                                double tinggi = input.nextDouble();
+                                Kerucut bKerucut = new Kerucut(jari,tinggi);
+                                System.out.println("Luas Permukaan Kerucut adalah " + bKerucut.getLuasPermukaan());
+                                System.out.println("Volume Kerucut adalah " + bKerucut.getVolume());
                                 break;
                             }
                             case 6: {
