@@ -7,14 +7,20 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int menu, menudatar, menuruang;
+        int menu=0, menudatar=0, menuruang=0;
         char balik;
             do {
                 System.out.println("== Menghitung Bangun Datar dan Ruang ==");
                 System.out.println("1. Bangun Datar");
                 System.out.println("2. Bangun Ruang");
                 System.out.print("Pilih : ");
+                try{
                 menu = input.nextInt();
+                }catch (InputMismatchException e){
+                    System.err.println("Input berupa angka!");
+                }finally{
+                    balik = 'y';
+                }
                 switch (menu) {
                     case 1: {
                         System.out.println("");
@@ -36,12 +42,13 @@ public class Main {
                                 break;
                             }
                             case 2: {
+                                //gatau salah apa bener
                                 System.out.println("== Tembereng Lingkaran ==");
                                 System.out.print("Masukkan jari-jari : ");
                                 double jari = input.nextDouble();
                                 System.out.print("Masukkan Besar Sudut Juring : ");
                                 double sudut = input.nextDouble();
-                                Lingkaran bTembereng = new Tembereng(jari, sudut);
+                                Juring bTembereng = new Tembereng(jari, sudut);
                                 System.out.println("Luas Tembereng Lingkaran adalah " + bTembereng.Luas());
                                 System.out.println("Keliling Tembereng Lingkaran adalah " + bTembereng.Keliling());
                                 break;
@@ -95,11 +102,11 @@ public class Main {
                                 System.out.println("== Tembereng Bola ==");
                                 System.out.print("Masukkan jari-jari : ");
                                 double jari = input.nextDouble();
-                                System.out.print("Masukkan tinggi bola : ");
+                                System.out.print("Masukkan tinggi tembereng : ");
                                 double tinggi = input.nextDouble();
-                                Bola bBola = new Tembereng3D(jari,tinggi);
-                                System.out.println("Luas Permukaan Tembereng Bola adalah " + bBola.getLuasPermukaan());
-                                System.out.println("Volume Tembereng Bola adalah " + bBola.getVolume());
+                                Bola bTembereng = new Tembereng3D(jari,tinggi);
+                                System.out.println("Luas Permukaan Tembereng Bola adalah " + bTembereng.getLuasPermukaan());
+                                System.out.println("Volume Tembereng Bola adalah " + bTembereng.getVolume());
                                 break;
                             }
                             case 3: {

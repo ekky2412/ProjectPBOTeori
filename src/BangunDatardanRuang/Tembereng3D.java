@@ -17,7 +17,7 @@ public class Tembereng3D extends Bola{
 
     @Override
     public double getVolume() {
-        double VolumeTembereng = 1/3 * Math.PI * Math.pow(tinggi, 2) * (3 * super.getJari() - tinggi);
+        double VolumeTembereng = (Math.PI * Math.pow(tinggi, 2) * (3 * super.getJari() - tinggi))/3;
         return VolumeTembereng;
     }
 }
