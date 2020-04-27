@@ -42,7 +42,7 @@ public class Main {
                             break;
                         }
                         case 2: {
-                            //gatau salah apa bener
+                            // gatau salah apa bener
                             System.out.println("== Tembereng Lingkaran ==");
                             System.out.print("Masukkan jari-jari : ");
                             double jari = input.nextDouble();
@@ -115,6 +115,13 @@ public class Main {
                         }
                         case 3: {
                             System.out.println("== Juring Bola ==");
+                            System.out.println("Masukkan jari-jari r : ");
+                            double jari = input.nextDouble();
+                            System.out.println("Masukkan jari-jari t : ");
+                            double jarit = input.nextDouble();
+                            Bola bJuring = new Juring3D(jari, jarit);
+                            System.out.println("Luas Permukaan Juring Bola adalah " + bJuring.getLuasPermukaan());
+                            System.out.println("Volume Juring Bola adalah " + bJuring.getVolume());
                             break;
                         }
                         case 4: {
