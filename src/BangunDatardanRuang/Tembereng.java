@@ -18,7 +18,7 @@ public class Tembereng extends Juring {
     public double Keliling(){
         // rumus = panjang busur + panjang tali busur
         double keliling = 2*super.Luas()/super.getJari() + TaliBusur();
-        return TaliBusur();
+        return keliling;
     }
     
     public double Luas(){

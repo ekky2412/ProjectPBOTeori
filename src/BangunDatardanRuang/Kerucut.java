@@ -17,4 +17,8 @@ public class Kerucut extends Lingkaran{
         double permukaanKerucut = super.Luas()+Math.PI*super.getJari()*garisPelukis;
         return permukaanKerucut;
     }
+    
+    public double getTinggi(){
+        return tinggi;
+    }
 }
