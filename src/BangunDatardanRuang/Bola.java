@@ -2,18 +2,19 @@ package BangunDatardanRuang;
 import java.math.*;
 
 public class Bola extends Lingkaran{
-
+    protected double VolumeBola;
+    protected double LuasPermukaanBola;
     public Bola(double jari){
        super(jari);
+       getVolume();
+       getLuasPermukaan();
     }
 
-    public double getVolume() {
-        double VolumeBola = (4 * super.luasLingkaran()* super.getJari()) /3;
-        return VolumeBola;
+    public void getVolume() {
+        VolumeBola = (4 * super.Luas()* super.getJari()) /3;
     }
 
-    public double getLuasPermukaan() {
-        double LuasPermukaanBola = 2* super.luasLingkaran();
-        return LuasPermukaanBola;
+    public void getLuasPermukaan() {
+        LuasPermukaanBola = 4* super.Luas();
     }
 }

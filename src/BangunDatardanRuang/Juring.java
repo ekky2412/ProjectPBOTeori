@@ -10,12 +10,12 @@ public class Juring extends Lingkaran {
         super(jari);
         this.theta = theta;
     }
-  public double Keliling (){
-      double keliling =(super.getJari() + super.getJari()) + theta/360 * 2 * Math.PI * super.getJari();
+  public double Keliling(){
+      double keliling =(super.getJari() + super.getJari()) + theta/360 * super.Keliling();
       return keliling;
   } 
    public double Luas (){
-       double luas = theta/360 * super.luasLingkaran();
+       double luas = theta/360 * super.Luas();
        return luas;
    }
     public double getBusur() {
