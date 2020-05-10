@@ -3,7 +3,9 @@ package BangunDatardanRuang;
 import java.math.*;
 
 public class Lingkaran{
-    private double jari;
+    protected double jari;
+    protected double luas;
+    protected double keliling;
     
     public Lingkaran(double jari) {
         this.jari = jari;
@@ -14,13 +16,13 @@ public class Lingkaran{
     }
     
     public double Luas(){
-        double hasil = Math.PI * jari * jari;
-        return hasil;
+        luas = Math.PI * jari * jari;
+        return luas;
     }
     
     public double Keliling(){
-        double hasil = 2 * Math.PI * jari;
-        return hasil;
+        keliling = 2 * Math.PI * jari;
+        return keliling;
     }
     
 }

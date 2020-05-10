@@ -128,8 +128,8 @@ public class Main {
                             System.out.print("Masukkan jari-jari : ");
                             double jari = input.nextDouble();
                             Bola bBola = new Bola(jari);
-                            System.out.println("Luas Permukaan Bola adalah " + bBola.getLuasPermukaan());
-                            System.out.println("Volume Bola adalah " + bBola.getVolume());
+                            System.out.println("Luas Permukaan Bola adalah " + bBola.LuasPermukaanBola);
+                            System.out.println("Volume Bola adalah " + bBola.VolumeBola);
                             }catch(InputMismatchException e){
                                 System.err.println("Input berupa Angka!");
                                 balik = input.next().charAt(0);
@@ -149,9 +149,9 @@ public class Main {
                                 System.err.println("Tinggi tembereng tidak melebihi jari-jari!");
                             }
                             }while(tinggi >= jari);
-                            Bola bTembereng = new Tembereng3D(jari, tinggi);
-                            System.out.println("Luas Permukaan Tembereng Bola adalah " + bTembereng.getLuasPermukaan());
-                            System.out.println("Volume Tembereng Bola adalah " + bTembereng.getVolume());
+                            Tembereng3D bTembereng = new Tembereng3D(jari, tinggi);
+                            System.out.println("Luas Permukaan Tembereng Bola adalah " + bTembereng.LuasTembereng);
+                            System.out.println("Volume Tembereng Bola adalah " + bTembereng.VolumeTembereng);
                             }catch(InputMismatchException e){
                                 System.err.println("Input berupa Angka!");
                                 balik = input.next().charAt(0);
@@ -165,9 +165,9 @@ public class Main {
                             double jari = input.nextDouble();
                             System.out.print("Masukkan tinggi tembereng : ");
                             double tinggi = input.nextDouble();
-                            Bola bJuring3D = new Juring3D(jari,tinggi);
-                            System.out.println("Luas Permukaan Juring Bola adalah " + bJuring3D.getLuasPermukaan());
-                            System.out.println("Volume Juring Bola adalah " + bJuring3D.getVolume());
+                            Juring3D bJuring3D = new Juring3D(jari,tinggi);
+                            System.out.println("Luas Permukaan Juring Bola adalah " + bJuring3D.luasJuring);
+                            System.out.println("Volume Juring Bola adalah " + bJuring3D.VolumeJuring);
                             }catch(InputMismatchException e){
                                 System.err.println("Input berupa Angka!");
                                 balik = input.next().charAt(0);

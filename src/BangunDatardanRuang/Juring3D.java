@@ -1,7 +1,9 @@
 package BangunDatardanRuang;
 
 public class Juring3D extends Bola{
-    private double tinggi;
+    protected double tinggi;
+    protected double luasJuring;
+    protected double VolumeJuring;
 
     Tembereng3D tem = new Tembereng3D(super.getJari(),tinggi);
     Kerucut ker = new Kerucut(super.getJari(),tinggiKer());
@@ -11,13 +13,11 @@ public class Juring3D extends Bola{
         super(jari);
         this.tinggi = tinggi;
     }
-    public double getLuasPermukaan () {
-		double luasJuring = tem.getLuasPermukaan() + ker.getLuasPermukaan() - (ling.Luas()*2);
-        return luasJuring;
+    public void getLuasPermukaan () {
+        luasJuring = tem.LuasTembereng + ker.getLuasPermukaan() - (ling.Luas()*2);
     }
-    public double getVolume () {
-        double VolumeJuring = tem.getVolume() + ker.getVolume();
-        return VolumeJuring;
+    public void getVolume () {
+        VolumeJuring = tem.VolumeTembereng + ker.getVolume();
     }
     private double tinggiKer() {
         double hasil = super.getJari() - tinggi;
