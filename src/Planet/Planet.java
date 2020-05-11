@@ -2,13 +2,15 @@ package Planet;
 import BangunDatardanRuang.Bola;
 public class Planet extends Bola{
     protected double orbit;
+    protected String namaPlanet;
     protected double kalarotasi;
     protected double kalarevolusi;
     protected double kecepatanrotasi;
     protected double kecepatanrevolusi;
     
-    public Planet(double jari,double orbit,double kalarotasi,double kalarevolusi) {
+    public Planet(double jari,double orbit,double kalarotasi,double kalarevolusi,String namaPlanet) {
         super(jari);
+        this.namaPlanet = namaPlanet;
         this.orbit = orbit;
         this.kalarotasi = kalarotasi;
         this.kalarevolusi = kalarevolusi;
