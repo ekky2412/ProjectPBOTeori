@@ -22,6 +22,17 @@ public class Main {
         menu = input.nextInt();
         switch(menu){
             case 1:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pBumi = new Bumi(jari, orbit, rotasi, revolusi);
+                System.out.println(pBumi.kecepatanrevolusi+"  "+ pBumi.kecepatanrotasi);
                 break;
             }
             case 2:{
