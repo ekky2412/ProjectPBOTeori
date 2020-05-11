@@ -7,7 +7,7 @@ public class Planet extends Bola{
     protected double kecepatanrotasi;
     protected double kecepatanrevolusi;
     
-    public Planet(int jari,double orbit,double kalarotasi,double kalarevolusi) {
+    public Planet(double jari,double orbit,double kalarotasi,double kalarevolusi) {
         super(jari);
         this.orbit = orbit;
         this.kalarotasi = kalarotasi;

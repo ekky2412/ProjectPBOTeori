@@ -1,7 +1,13 @@
 package Planet;
 
 public class Matahari extends Planet {
-    public Matahari(int jari, double orbit, double kalarotasi) {
-        super(jari, orbit, kalarotasi, 0);
+    
+//    double jari = 696340;
+//    double panjang_orbit = 0
+//    double kalarotasi = 658.075;
+//    double kalarevolusi = 0;    
+    
+    public Matahari(double jari, double kalarotasi) {
+        super(jari,0, kalarotasi, 0);
     }
 }

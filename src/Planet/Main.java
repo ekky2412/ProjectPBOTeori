@@ -31,11 +31,22 @@ public class Main {
                 rotasi = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 revolusi = input.nextDouble();
-                Planet pBumi = new Bumi(jari, orbit, rotasi, revolusi);
-                System.out.println(pBumi.kecepatanrevolusi+"  "+ pBumi.kecepatanrotasi);
+                Planet pMerkurius = new Merkurius(jari, orbit, rotasi, revolusi);
+                System.out.println(pMerkurius.kecepatanrevolusi+"  "+ pMerkurius.kecepatanrotasi);
                 break;
             }
             case 2:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pVenus = new Venus(jari, orbit, rotasi, revolusi);
+                System.out.println(pVenus.kecepatanrevolusi+"  "+ pVenus.kecepatanrotasi);
                 break;
             }
             case 3:{
@@ -53,21 +64,85 @@ public class Main {
                 break;
             }
             case 4:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pMars = new Mars(jari, orbit, rotasi, revolusi);
+                System.out.println(pMars.kecepatanrevolusi+"  "+ pMars.kecepatanrotasi);
                 break;
             }
             case 5:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pJupiter = new Jupiter(jari, orbit, rotasi, revolusi);
+                System.out.println(pJupiter.kecepatanrevolusi+"  "+ pJupiter.kecepatanrotasi);
                 break;
             }
             case 6:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pSaturnus = new Saturnus(jari, orbit, rotasi, revolusi);
+                System.out.println(pSaturnus.kecepatanrevolusi+"  "+ pSaturnus.kecepatanrotasi);
                 break;
             }
             case 7:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pUranus = new Uranus(jari, orbit, rotasi, revolusi);
+                System.out.println(pUranus.kecepatanrevolusi+"  "+ pUranus.kecepatanrotasi);
                 break;
             }
             case 8:{
+                int jari; double orbit; double rotasi; double revolusi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                System.out.println("Input Kala Revolusi : ");
+                revolusi = input.nextDouble();
+                Planet pNeptunus = new Neptunus(jari, orbit, rotasi, revolusi);
+                System.out.println(pNeptunus.kecepatanrevolusi+"  "+ pNeptunus.kecepatanrotasi);
                 break;
             }
             case 9:{
+                int jari; double orbit; double rotasi;
+                System.out.println("Input Jari-jari : ");
+                jari = input.nextInt();
+                System.out.println("Input Panjang Orbit : ");
+                orbit = input.nextDouble();
+                System.out.println("Input Kala Rotasi : ");
+                rotasi = input.nextDouble();
+                Planet pMatahari = new Matahari(jari, rotasi);
+                System.out.println(pMatahari.kecepatanrevolusi+"  "+ pMatahari.kecepatanrotasi);
                 break;
             }
         }
