@@ -1,18 +1,22 @@
 package Planet;
 
-public class Multithread implements Runnable{
+public class Multithread extends Planet implements Runnable{
     Thread t;
-    String namaPlanet;
+    Double luas, volume;
 
-    Multithread(String nama) {
-        namaPlanet = nama;
+    Multithread(double jari,double orbit,double kalarotasi,double kalarevolusi,String namaPlanet) {
+        super(jari,orbit,kalarotasi,kalarevolusi,namaPlanet);
+        System.out.println("Thread "+ namaPlanet + " Telah disimpan");
     }
 
     @Override
     public void run() {
         try {
 //            !Start
-
+            luas = 4 * Math.PI * Math.pow(jari,2);
+            volume = (4 * Math.PI * Math.pow(jari,2))/3;
+            System.out.println("Luas "+ namaPlanet + " : " + luas);
+            System.out.println("Volume "+ namaPlanet + " : " + volume);
 //            !End
 
             Thread.sleep(4000);
