@@ -7,7 +7,7 @@ public class Venus extends Planet{
 //    double kalarotasi = 5815.6;
 //    double kalarevolusi = 5377.071; 
     
-    public Venus(double jari,double orbit,double kalarotasi,double kalarevolusi) {
-        super(jari, orbit, kalarotasi, kalarevolusi);
+    public Venus(double jari,double orbit,double kalarotasi,double kalarevolusi,String namaPlanet) {
+        super(jari, orbit, kalarotasi, kalarevolusi,namaPlanet);
     }
 }

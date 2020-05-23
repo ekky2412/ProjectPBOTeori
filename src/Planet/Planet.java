@@ -1,6 +1,6 @@
 package Planet;
 import BangunDatardanRuang.Bola;
-public class Planet extends Bola{
+public class Planet extends Bola implements Runnable{
     protected double orbit;
     protected String namaPlanet;
     protected double kalarotasi;
@@ -24,6 +24,11 @@ public class Planet extends Bola{
     
     public void getKecepatanRevolusi(){
         kecepatanrevolusi = orbit * Math.pow(10,6) / kalarevolusi;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Thread Berjalan");
     }
     
 }

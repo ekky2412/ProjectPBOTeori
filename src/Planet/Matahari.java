@@ -7,7 +7,7 @@ public class Matahari extends Planet {
 //    double kalarotasi = 658.075;
 //    double kalarevolusi = 0;    
     
-    public Matahari(double jari, double kalarotasi) {
-        super(jari,0, kalarotasi, 0);
+    public Matahari(double jari,double orbit, double kalarotasi,double kalarevolusi,String namaPlanet) {
+        super(jari,0, kalarotasi, 0,namaPlanet);
     }
 }
