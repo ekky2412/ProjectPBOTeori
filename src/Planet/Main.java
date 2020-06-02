@@ -10,13 +10,13 @@ public class Main{
         RandomAccessFile isiFile = null;
         String dirFile = "D:\\File Java\\FilePlanet.txt";
         try{
-        isiFile = new RandomAccessFile(dirFile, "r");
+        isiFile = new RandomAccessFile(dirFile, "rw");
         isiFile.seek(0);
         }catch(IOException ioe){
             System.err.println(ioe.getMessage());
             System.err.println("Terjadi IOException");
         }
-        double[][] data = new double[10][5];
+        Double[][] data = new Double[10][5];
         Scanner input = new Scanner(System.in);
         int menu; char balik;
         do{
@@ -44,6 +44,16 @@ public class Main{
                 data[0][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[0][3] = input.nextDouble();
+                try {
+                    isiFile.seek(0);
+                    isiFile.writeUTF("Merkurius");
+                    isiFile.writeDouble(data[0][0]);
+                    isiFile.writeDouble(data[0][1]);
+                    isiFile.writeDouble(data[0][2]);
+                    isiFile.writeDouble(data[0][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pMerkurius.kecepatanrevolusi+"  "+ pMerkurius.kecepatanrotasi);
                 break;
             }
@@ -56,6 +66,16 @@ public class Main{
                 data[1][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[1][3] = input.nextDouble();
+                try {
+                    isiFile.seek(44);
+                    isiFile.writeUTF("Venus");
+                    isiFile.writeDouble(data[1][0]);
+                    isiFile.writeDouble(data[1][1]);
+                    isiFile.writeDouble(data[1][2]);
+                    isiFile.writeDouble(data[1][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pVenus.kecepatanrevolusi+"  "+ pVenus.kecepatanrotasi);
                 break;
             }
@@ -68,6 +88,16 @@ public class Main{
                 data[2][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[2][3] = input.nextDouble();
+                try {
+                    isiFile.seek(84);
+                    isiFile.writeUTF("Bumi");
+                    isiFile.writeDouble(data[2][0]);
+                    isiFile.writeDouble(data[2][1]);
+                    isiFile.writeDouble(data[2][2]);
+                    isiFile.writeDouble(data[2][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pBumi.kecepatanrevolusi+"  "+ pBumi.kecepatanrotasi);
                 break;
             }
@@ -80,6 +110,16 @@ public class Main{
                 data[3][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[3][3] = input.nextDouble();
+                try {
+                    isiFile.seek(123);
+                    isiFile.writeUTF("Mars");
+                    isiFile.writeDouble(data[3][0]);
+                    isiFile.writeDouble(data[3][1]);
+                    isiFile.writeDouble(data[3][2]);
+                    isiFile.writeDouble(data[3][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pMars.kecepatanrevolusi+"  "+ pMars.kecepatanrotasi);
                 break;
             }
@@ -92,6 +132,16 @@ public class Main{
                 data[4][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[4][3] = input.nextDouble();
+                try {
+                    isiFile.seek(162);
+                    isiFile.writeUTF("Jupiter");
+                    isiFile.writeDouble(data[4][0]);
+                    isiFile.writeDouble(data[4][1]);
+                    isiFile.writeDouble(data[4][2]);
+                    isiFile.writeDouble(data[4][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pJupiter.kecepatanrevolusi+"  "+ pJupiter.kecepatanrotasi);
                 break;
             }
@@ -104,6 +154,16 @@ public class Main{
                 data[5][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[5][3] = input.nextDouble();
+                try {
+                    isiFile.seek(204);
+                    isiFile.writeUTF("Saturnus");
+                    isiFile.writeDouble(data[5][0]);
+                    isiFile.writeDouble(data[5][1]);
+                    isiFile.writeDouble(data[5][2]);
+                    isiFile.writeDouble(data[5][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pSaturnus.kecepatanrevolusi+"  "+ pSaturnus.kecepatanrotasi);
                 break;
             }
@@ -116,6 +176,16 @@ public class Main{
                 data[6][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[6][3] = input.nextDouble();
+                try {
+                    isiFile.seek(247);
+                    isiFile.writeUTF("Uranus");
+                    isiFile.writeDouble(data[6][0]);
+                    isiFile.writeDouble(data[6][1]);
+                    isiFile.writeDouble(data[6][2]);
+                    isiFile.writeDouble(data[6][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pUranus.kecepatanrevolusi+"  "+ pUranus.kecepatanrotasi);
                 break;
             }
@@ -128,6 +198,16 @@ public class Main{
                 data[7][2] = input.nextDouble();
                 System.out.println("Input Kala Revolusi : ");
                 data[7][3] = input.nextDouble();
+                try {
+                    isiFile.seek(288);
+                    isiFile.writeUTF("Neptunus");
+                    isiFile.writeDouble(data[7][0]);
+                    isiFile.writeDouble(data[7][1]);
+                    isiFile.writeDouble(data[7][2]);
+                    isiFile.writeDouble(data[7][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pNeptunus.kecepatanrevolusi+"  "+ pNeptunus.kecepatanrotasi);
                 break;
             }
@@ -139,15 +219,44 @@ public class Main{
                 System.out.println("Input Kala Rotasi : ");
                 data[8][2] = input.nextDouble();
                 data[8][3] = 0.0;
+                try {
+                    isiFile.seek(331);
+                    isiFile.writeUTF("Matahari");
+                    isiFile.writeDouble(data[8][0]);
+                    isiFile.writeDouble(data[8][1]);
+                    isiFile.writeDouble(data[8][2]);
+                    isiFile.writeDouble(data[8][3]);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
 //                System.out.println(pMatahari.kecepatanrevolusi+"  "+ pMatahari.kecepatanrotasi);
                 break;
             }
             case 10:{
+                int[] point = {0,44,84,123,162,204,247,288,331};
+                try{
+                    for(int i=0;i<9;i++){
+                        isiFile.seek(point[i]);
+                        System.out.println("Terbaca : "+isiFile.readUTF());
+                        data[i][0]= isiFile.readDouble();
+                        data[i][1]= isiFile.readDouble();
+                        data[i][2]= isiFile.readDouble();
+                        data[i][3]= isiFile.readDouble();
+                        System.out.println(data[i][0]);
+                        System.out.println(data[i][1]);
+                        System.out.println(data[i][2]);
+                        System.out.println(data[i][3]);
+                    }
+                } catch (IOException ioe){
+                    System.err.println(ioe.getMessage());
+                }
                 boolean selesai = true;
                 for (int i = 0; i < 9; i++) {
-                    if (data[i] == null) {
-                        System.out.println("Data Menu ke-"+ i +" Masih Kosong");
-                        selesai = false;
+                    for(int j = 0; j < 4; j++){
+                      if (data[i][j] == null) {
+                        System.out.println("Data Menu ke-["+ i +"]["+j+"] Masih Kosong");
+                        selesai = false;  
+                        }
                     }
                 }
                 if (selesai){
